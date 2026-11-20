@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f8f3e9;
+  color: #3f382f;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header, footer, .hero, .recipe-times {
+  text-align: center;
+}
+
+header, footer {
+  padding: 16px;
+  color: #fffaf0;
+}
+
+header {
+  background: #68212a;
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 8px;
+  color: #fffaf0;
+}
+
+main {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+h1, h2, h3, .holiday-wish {
+  font-family: Georgia, serif;
+}
+
+h1 {
+  margin: 8px 0;
+  color: #194034;
+  font-size: 2.25rem;
+}
+
+.holly {
+  display: block;
+  margin: 16px auto;
+}
+
+/* Two columns on a wide screen */
+.recipe {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: start;
+  gap: 16px;
+}
+
+.recipe section {
+  overflow: hidden;
+  padding: 16px;
+  border: 1px solid #e6d7bf;
+  border-radius: 8px;
+  background: #fffaf0;
+}
+
+h2 {
+  margin: 0;
+  padding: 8px;
+  background: #194034;
+  color: #fffaf0;
+}
+
+#ingredients h2 {
+  background: #842b36;
+}
+
+h3 {
+  color: #68212a;
+}
+
+#ingredients label {
+  display: flex;
+  gap: 6px;
+  padding: 3px 0;
+  cursor: pointer;
+}
+
+#ingredients input {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin: 5px 0 0;
+  accent-color: #194034;
+}
+
+.cookie-star {
+  float: right;
+  margin-left: 8px;
+}
+
+.recipe-times span {
+  display: inline-block;
+  margin: 4px 8px;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+.baking-tip {
+  padding: 12px;
+  border-radius: 6px;
+  background: #f4dfd6;
+  color: #68212a;
+  font-weight: bold;
+}
+
+header img, .recipe-times img, h2 img, .baking-tip img, .footer-images img {
+  vertical-align: middle;
+}
+
+.contact {
+  max-width: 600px;
+  margin: 32px auto;
+  padding: 16px;
+  background: #fffaf0;
+  border: 1px solid #e6d7bf;
+  border-radius: 8px;
+}
+
+.contact h2 {
+  background: #842b36;
+  border-radius: 6px;
+}
+
+.contact label {
+  display: block;
+  margin: 12px 0 4px;
+  font-weight: bold;
+}
+
+.contact input, .contact select, .contact textarea {
+  width: 100%;
+  padding: 10px;
+  background: white;
+  color: #3f382f;
+  border: 1px solid #a68e73;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.contact textarea {
+  resize: vertical;
+}
+
+.contact button {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: #e6d7bf;
+  color: #5e5140;
+  border: 0;
+  border-radius: 6px;
+  font: inherit;
+}
+
+footer {
+  background: #142f27;
+}
+
+.holiday-wish {
+  font-size: 1.8rem;
+}
+
+/* One column on a small screen */
+@media (max-width: 700px) {
+  .recipe {
+    grid-template-columns: 1fr;
+  }
+}

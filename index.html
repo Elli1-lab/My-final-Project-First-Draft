@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melomakarona | Christmas Kitchen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <p><img src="images/gingerbread-person.png" alt="" width="24" height="29"> Christmas Kitchen</p>
+    <nav aria-label="Recipe sections">
+      <a href="#ingredients">Ingredients</a>
+      <a href="#instructions">Instructions</a>
+      <a href="#baking-tip">Baking Tip</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/melomakarona.png"
+           alt="Greek honey cookies topped with walnuts on a Christmas table"
+           width="1774" height="887">
+      <h1>Melomakarona</h1>
+      <p>Greek Christmas honey cookies with orange, cinnamon, and walnuts.</p>
+    </section>
+
+    <p class="recipe-times">
+      <span><img src="images/clock.png" alt="" width="24" height="24"> 50 min prep</span>
+      <span><img src="images/oven.png" alt="" width="24" height="24"> 105 min baking across batches</span>
+      <span><img src="images/cutlery.png" alt="" width="24" height="24"> 75–80 cookies</span>
+    </p>
+    <img class="holly" src="images/holly.png" alt="" width="54" height="32">
+
+    <div class="recipe">
+      <section id="ingredients">
+        <h2><img src="images/bowl.png" alt="" width="24" height="24"> Ingredients</h2>
+        <p>Check off each ingredient as you go.</p>
+
+        <h3>For the syrup</h3>
+        <label><input type="checkbox"> 500 g water</label>
+        <label><input type="checkbox"> 800 g granulated sugar</label>
+        <label><input type="checkbox"> 3 cinnamon sticks</label>
+        <label><input type="checkbox"> 3 whole cloves</label>
+        <label><input type="checkbox"> 1 orange, halved</label>
+        <label><input type="checkbox"> 150 g honey</label>
+
+        <h3>For the cookies</h3>
+        <label><input type="checkbox"> 400 g orange juice</label>
+        <label><input type="checkbox"> 400 g seed oil, such as sunflower oil</label>
+        <label><input type="checkbox"> 180 g olive oil</label>
+        <label><input type="checkbox"> 50 g icing sugar</label>
+        <label><input type="checkbox"> ½ tsp ground cloves</label>
+        <label><input type="checkbox"> 2–3 tsp ground cinnamon</label>
+        <label><input type="checkbox"> ¼ tsp ground nutmeg</label>
+        <label><input type="checkbox"> 1 tsp baking soda</label>
+        <label><input type="checkbox"> Zest of 2 oranges</label>
+        <label><input type="checkbox"> 1 kg all-purpose flour</label>
+        <label><input type="checkbox"> 200 g fine semolina</label>
+
+        <h3>To finish</h3>
+        <img class="cookie-star" src="images/gingerbread-star.png" alt="" width="80" height="68">
+        <label><input type="checkbox"> Honey, for drizzling</label>
+        <label><input type="checkbox"> Finely chopped walnuts</label>
+      </section>
+
+      <section id="instructions">
+        <h2><img src="images/chef-hat.png" alt="" width="24" height="24"> Instructions</h2>
+        <p>Allow 3–4 hours for the syrup to cool. You can make it a day ahead.</p>
+
+        <ol>
+          <li>
+            <strong>Make the syrup.</strong>
+            Bring the water, sugar, cinnamon sticks, whole cloves, and orange halves to a boil.
+            When the sugar dissolves, take the pan off the heat and stir in the honey.
+            Let the syrup cool completely.
+          </li>
+          <li>
+            <strong>Mix the dough.</strong>
+            Heat the oven to 190°C fan and line a baking tray with parchment.
+            Whisk the juice, oils, icing sugar, ground spices, baking soda, and zest in one bowl.
+            Mix the flour and semolina in another bowl.
+            Pour the wet mixture into the dry ingredients and stir gently with a spoon for about 10 seconds.
+          </li>
+          <li>
+            <strong>Shape and bake.</strong>
+            Shape 30 g portions into ovals about 3–4 cm long.
+            Roll each cookie lightly over a wire skimmer to make the pattern.
+            Bake 16–20 cookies per tray for 20–25 minutes, until golden and crisp.
+            Plan on 4–5 batches.
+          </li>
+          <li>
+            <strong>Dip in cold syrup.</strong>
+            As soon as each tray comes out of the oven, dip the hot cookies in the cold syrup for about 10 seconds.
+            Lift them out with a slotted spoon and drain on a wire rack.
+          </li>
+          <li>
+            <strong>Finish with honey and walnuts.</strong>
+            Arrange the cookies on a platter, drizzle with honey, and scatter the chopped walnuts on top.
+          </li>
+        </ol>
+
+        <div class="baking-tip" id="baking-tip">
+          <img src="images/gift.png" alt="" width="20" height="21">
+          Chef’s Tip
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-images">
+      <img src="images/evergreen.png" alt="" width="64" height="56">
+      <img src="images/snowflake.png" alt="" width="28" height="30">
+      <img src="images/evergreen.png" alt="" width="64" height="56">
+    </div>
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+  <h2 id="contact-title">Contact</h2>
+  <p id="contact-note">Class project demo. Sending is disabled.</p>
+
+  <form aria-describedby="contact-note">
+    <label for="contact-name">Full Name *</label>
+    <input type="text" id="contact-name" placeholder="Enter your full name" required>
+
+    <label for="contact-subject">Subject *</label>
+    <select id="contact-subject" required>
+      <option value="">Select a subject</option>
+      <option value="recipe">Recipe question</option>
+      <option value="feedback">Website feedback</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="contact-email">Email *</label>
+    <input type="email" id="contact-email" placeholder="Enter your email" required>
+
+    <label for="contact-phone">Phone *</label>
+    <input type="tel" id="contact-phone" placeholder="Enter your phone number" required>
+
+    <label for="contact-message">Message *</label>
+    <textarea id="contact-message" rows="4" placeholder="Write your message" required></textarea>
+
+    <button type="submit" disabled>Send message</button>
+  </form>
+</section>
+    <p class="holiday-wish">Happy Holidays!</p>
+    <p>Wishing you a warm kitchen and plenty of cookies to share.</p>
+    <p>Recipe adapted from Akis Petretzikis.</p>
+  </footer>
+</body>
+</html>   
